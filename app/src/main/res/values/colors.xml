@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffbb34</color>
+    <color name="colorPrimaryDark">#ff8800</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+    <color name="lock_button">#4c4c4c</color>
+    <color name="lock_button2">#929292</color>
+    <color name="button_pressed">#64fc51</color>
+</resources>

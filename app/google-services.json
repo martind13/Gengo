@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "711669136940",
+    "firebase_url": "https://gengojapanese-e3698.firebaseio.com",
+    "project_id": "gengojapanese-e3698",
+    "storage_bucket": "gengojapanese-e3698.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711669136940:android:11c5816cb30fd474",
+        "android_client_info": {
+          "package_name": "com.example.devma.gengojapanese"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711669136940-c2j8vugh14lorrsd11bem2gdhqqg5scm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.devma.gengojapanese",
+            "certificate_hash": "786bf5ca2f478e954701215c4439911ca5f9ec97"
+          }
+        },
+        {
+          "client_id": "711669136940-dmqoqmbj80k1dvbu6r6stqv0c5sj2b6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmvp8smHUWYulCOhlojGuubnWk7epBlqs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711669136940-dmqoqmbj80k1dvbu6r6stqv0c5sj2b6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

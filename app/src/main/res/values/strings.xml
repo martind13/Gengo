@@ -1,0 +1,234 @@
+<resources>
+    <string name="app_name">Gengo</string>
+    <string name="title_activity_chapter1_3">Chapter1_3</string>
+    <string name="chap1_3_1">Hello!</string>
+    <string name="chap1_3_3">こんにちは!\n[kon\u2022ni\u2022chi\u2022wa] </string>
+    <string name="chap1_3_2">Are you ready to practice your listening skills?</string>
+    <string name="chap1_wel_1"></string>
+    <string name="chap1_7">Are you ready to practice your reading skills?</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hiragana">Hiragana</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="incorrect_pass">The email or password is incorrect.</string>
+    <string name="title_activity_chapter1_7">Chapter1_7</string>
+
+    <string-array name="hira">
+        <item>あいうえお</item>
+        <item>かきくけこ</item>
+        <item>がぎぐげご</item>
+        <item>さしすせそ</item>
+        <item>ざじずぜぞ</item>
+        <item>たちつてと</item>
+        <item>だぢづでど</item>
+    </string-array>
+    <string-array name="ch1_main_japa">
+        <item>はい (hai)</item>
+        <item>いいえ (iie)</item>
+        <item>こんにちは (konnichiwa)</item>
+        <item>あの (ano)</item>
+        <item>えいご (eigo)</item>
+        <item>ええ (ee)</item>
+        <item>がくせい (gakusei)</item>
+        <item>～ご (~go)</item>
+        <item>こうこう (koukou)</item>
+        <item>ごご (gogo)</item>
+        <item>ごぜん (gozen)</item>
+        <item>～さい (~sai)</item>
+        <item>～さん (~san)</item>
+        <item>～じ (~ji)</item>
+        <item>～じん (~jin)</item>
+        <item>せんこう (senkou)</item>
+        <item>せんせい (sensei)</item>
+        <item>そうです (sou desu)</item>
+        <item>だいがく (daigaku)</item>
+        <item>でんわ (denwa)</item>
+        <item>ともだち (tomodachi)</item>
+        <item>なまえ (namae)</item>
+        <item>なん/なに (nan/nani)</item>
+        <item>にほん (nihon)</item>
+        <item>～ねんせい (~nensei)</item>
+        <item>はん (han)</item>
+        <item>ばんごう (bangou)</item>
+        <item>りゅうがくせい (ryuugakusei)</item>
+        <item>わたし (watashi)</item>
+    </string-array>
+    <string-array name="ch1_main_eng">
+        <item>Yes; this is correct (polite)</item>
+        <item>No</item>
+        <item>Hello; good day (daytime greeting)</item>
+        <item>Umm...</item>
+        <item>English (language)</item>
+        <item>Yes; this is correct; right</item>
+        <item>Student</item>
+        <item>...language \n ex. にほんご(nihongo) Japanese Language</item>
+        <item>High school</item>
+        <item>P.M.</item>
+        <item>A.M.</item>
+        <item>...years old</item>
+        <item>Mr./Ms... (honorific)</item>
+        <item>O\'clock \n ex. いちじ(ichiji) one o\'clock</item>
+        <item>...people \n ex. にほんじん(nihonjin) Japanese people</item>
+        <item>Major subject</item>
+        <item>Teacher; Master; Doctor (honorific or respectful)</item>
+        <item>That\'s right.</item>
+        <item>I see.; Is that so? </item>
+        <item>College; university</item>
+        <item>Telephone</item>
+        <item>Friend; companion</item>
+        <item>Name</item>
+        <item>What</item>
+        <item>Japan</item>
+        <item>...year student \n ex. にねんせい(ninensei) 2nd year student</item>
+        <item>Half \n ex.　にじはん(nijihan) half past two</item>
+        <item>Number</item>
+        <item>International student</item>
+        <item>I; me</item>
+    </string-array>
+    <string-array name="ch1_countries_japa">
+        <item>アメリカ (amerika)</item>
+        <item>イギリス (igirisu)</item>
+        <item>オーストラリア (oosutoraria)</item>
+        <item>かんこく (kankoku)</item>
+        <item>スウェーデン (suweeden)</item>
+        <item>ちゅうごく (chuugoku)</item>
+    </string-array>
+    <string-array name="ch1_countries_eng">
+        <item>America</item>
+        <item>Britain</item>
+        <item>Australia</item>
+        <item>Korea</item>
+        <item>Sweden</item>
+        <item>China</item>
+    </string-array>
+    <string-array name="ch1_majors_japa">
+        <item>かがく (kagaku)</item>
+        <item>アジアはんきゅう (ajia hankyu)</item>
+        <item>けいざい (keizai)</item>
+        <item>こくさいかんけい(kokusaikankei)</item>
+        <item>コンピューター (konpyuutaa)</item>
+        <item>じんるいがく (jinruigaku)</item>
+        <item>せいじ (seiji)</item>
+        <item>ビジネス (bijinesu)</item>
+        <item>ぶんがく (bungaku)</item>
+        <item>れきし (rekishi)</item>
+    </string-array>
+    <string-array name="ch1_majors_eng">
+        <item>Science</item>
+        <item>Asian studies</item>
+        <item>Economics</item>
+        <item>International relations</item>
+        <item>Computer</item>
+        <item>Anthropology</item>
+        <item>Politics</item>
+        <item>Business</item>
+        <item>Literature</item>
+        <item>History</item>
+    </string-array>
+    <string-array name="ch1_occupations_japa">
+        <item>しごと (shigoto)</item>
+        <item>いしゃ (isha)</item>
+        <item>かいしゃいん (kaishain)</item>
+        <item>こうこうせい (koukousei)</item>
+        <item>しゅふ (shufu)</item>
+        <item>だいがくいんせい (daigakuinsei)</item>
+        <item>だいがくせい (daigakusei)</item>
+        <item>べんごし(bengoshi)</item>
+    </string-array>
+    <string-array name="ch1_occupations_eng">
+        <item>Job; work; occupation</item>
+        <item>Doctor</item>
+        <item>Office worker</item>
+        <item>Highschool student</item>
+        <item>Housewife</item>
+        <item>Graduate student</item>
+        <item>University student</item>
+        <item>Lawyer</item>
+    </string-array>
+    <string-array name="ch1_family_japa">
+        <item>おかあさん (okaasan)</item>
+        <item>おとおさん (otoosan)</item>
+        <item>おねえさん (oneesan)</item>
+        <item>おにいさん (oniisan)</item>
+        <item>いもおと (imouto)</item>
+        <item>おとうと (otouto)</item>
+    </string-array>
+    <string-array name="ch1_family_eng">
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Older sister</item>
+        <item>Older brother</item>
+        <item>Younger sister</item>
+        <item>Younger brother</item>
+    </string-array>
+    <string name="hirgana">Hiragana is the basic Japanese phonetic script. It represents every sound in the Japanese language. </string>
+    \
+    <string-array name="AtoO">
+        <item>あ is pronounced like the \"a\" in \"car\"</item>
+        <item>い is pronounced like the \"ee\" in \"eel\"</item>
+        <item>う is pronounced like the \"oo\" in \"pool\"</item>
+        <item>え is pronounced like the \"e\" in \"egg\"</item>
+        <item>お is pronounced like you\'re saying \"oh\"</item>
+    </string-array>
+    <string-array name="KAtoGO">
+        <item>か is pronounced like the \"ca\" in \"cat\"</item>
+        <item>き is pronounced like the \"ke\" in \"key\"</item>
+        <item>く is pronounced like the \"coo\" in \"cookie\"</item>
+        <item>け is pronounced like the \"ke\" in \"kettle\"</item>
+        <item>こ is pronounced like the \"co\" in \"code\"</item>
+        <item>が is pronounced like the \"ga\" in \"garage\"</item>
+        <item>ぎ is pronounced like the \"ge\" in \"geek\"</item>
+        <item>ぐ is pronounced like \"goo\"</item>
+        <item>げ is pronounced like the \"ge\" in \"gecko\"</item>
+        <item>ご is pronounced like the \"go\" in \"goat\"</item>
+    </string-array>
+    <string-array name="SAtoZO">
+        <item>さ is pronounced like the \"sa\" in \"saturday\"</item>
+        <item>し is pronounced like \"she\"</item>
+        <item>す is pronounced like \"sue\"</item>
+        <item>せ is pronounced like the \"se\" in \"set\"</item>
+        <item>そ is pronounced like the \"so\" in \"soy\"</item>
+        <item>ざ is pronounced like the \"za\" in \"zap\"</item>
+        <item>じ is pronounced like \"zhi\"</item>
+        <item>ず is pronounced like \"zoo\"</item>
+        <item>ぜ is pronounced like \"zey\"</item>
+        <item>ぞ is pronounced like \"zoh\"</item>
+    </string-array>
+    <string-array name="TAtoDO">
+        <item>た is pronounced like the \"ta\" in \"tan\"</item>
+        <item>ち is pronounced like the \"chi\" in \"chia\"</item>
+        <item>つ is just the \"Ts\" sound plus う, making a \"tsu\" sound</item>
+        <item>て is pronounced like the \"te\" in \"tent\"</item>
+        <item>と is pronounced like \"toe\"</item>
+        <item>だ is pronounced like the \"da\" in \"day\"</item>
+        <item>ぢ　is pronounced like the \"ji\" in \"gee\"</item>
+        <item>づ is pronounced like \"dzu\"</item>
+        <item>で is pronounced like the \"de\" in \"death\"</item>
+        <item>ど is pronounced like \"doe\"</item>
+    </string-array>
+    <string-array name="MAtoMO">
+        <item>ま is pronounced like the \"ma\" in \"mama\"</item>
+        <item>み is pronounced like \"me\"</item>
+        <item>む is pronounced like \"moo\"</item>
+        <item>め is pronounced like the \"me\" in \"memo\"</item>
+        <item>も is pronounced like \"mow\"</item>
+    </string-array>
+    <string-array name="NAtoNO">
+        <item>な is pronounced like the \"na\" in \"Namaimo\"</item>
+        <item>に is pronounced like \"knee\"</item>
+        <item>ぬ is pronounced like \"new\"</item>
+        <item>ね is pronounced like the \"ne\" in \"net\"</item>
+        <item>の is pronounced like \"no\"</item>
+    </string-array>
+</resources>

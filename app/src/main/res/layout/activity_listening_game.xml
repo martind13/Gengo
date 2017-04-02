@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.devma.gengojapanese.ListeningGame"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="106dp"
+                android:id="@+id/practice1"
+                android:layout_height="98dp"
+                android:background="@drawable/listen"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="111dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:text="Button"
+                android:layout_width="108dp"
+                android:layout_height="98dp"
+                android:id="@+id/btn1"
+                android:onClick="btn1_click"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+            <ImageButton
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:id="@+id/btn2"
+                android:layout_weight="1.00"
+                android:layout_height="98dp"
+                android:onClick="btn2_click"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+            <ImageButton
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:id="@+id/btn3"
+                android:layout_weight="1.00"
+                android:layout_height="98dp"
+                android:onClick="btn3_click"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="113dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:id="@+id/btn4"
+                android:layout_weight="0.99"
+                android:onClick="btn4_click"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+            <ImageButton
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:id="@+id/btn5"
+                android:layout_weight="1.00"
+                android:layout_height="98dp"
+                android:onClick="btn5_click"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+            <ImageButton
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:id="@+id/btn6"
+                android:layout_weight="1.00"
+                android:layout_height="98dp"
+                android:onClick="btn6_click"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="102dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                android:id="@+id/btn7"
+                android:layout_weight="0.99"
+                android:onClick="btn7_click"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+            <ImageButton
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:id="@+id/btn8"
+                android:layout_weight="1.00"
+                android:layout_height="98dp"
+                android:onClick="btn8_click"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+            <ImageButton
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:id="@+id/btn9"
+                android:layout_weight="1.00"
+                android:layout_height="98dp"
+                android:onClick="btn9_click"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</LinearLayout>

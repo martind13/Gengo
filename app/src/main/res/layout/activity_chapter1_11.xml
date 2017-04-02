@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_chapter1_11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.devma.gengojapanese.Chapter1_11"
+    android:weightSum="1"
+    android:background="@android:color/background_light">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="133dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/review_bunny1">
+
+            <TextView
+                android:text="Take this chance \nto review!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:layout_marginRight="22dp"
+                android:layout_marginEnd="22dp"
+                android:textColor="@color/lock_button"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+        <Button
+            android:text="あ - ご"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:theme="@style/MyButton"
+            android:textStyle="normal|bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="0.11"
+        android:layout_height="66dp">
+
+        <Button
+            android:text="さ - ど"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:theme="@style/MyButton"
+            android:textStyle="normal|bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+
+        <Button
+            android:text="ま - の"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:theme="@style/MyButton"
+            android:textStyle="normal|bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:weightSum="1"
+        android:layout_weight="0.56">
+
+        <Button
+            android:text="I don't need to review!"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:id="@+id/btn4"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:theme="@style/MyButton2"
+            android:textStyle="normal|bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

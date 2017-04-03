@@ -31,19 +31,18 @@ public class ListeningGame extends AppCompatActivity {
 
     public static int counter = 0;
     String stringCounter;
-    SharedPreferences example;
+    SharedPreferences pref1;
 
     public Random rnd = new Random();
     public int[] soundFiles = new int[]{R.raw.a, R.raw.i, R.raw.u, R.raw.e, R.raw.o, R.raw.ka, R.raw.ki, R.raw.ku, R.raw.ke, R.raw.ko, R.raw.ga, R.raw.gi, R.raw.gu, R.raw.ge, R.raw.go};
     public int[] btns_orange = new int[]{R.drawable.a_orange, R.drawable.i_orange, R.drawable.u_orange, R.drawable.e_orange, R.drawable.o_orange, R.drawable.ka_orange, R.drawable.ki_orange, R.drawable.ku_orange, R.drawable.ke_orange, R.drawable.ko_orange, R.drawable.ga_orange, R.drawable.gi_orange, R.drawable.gu_orange, R.drawable.ge_orange, R.drawable.go_orange};
-    //private int[] btns_red = new int[]{R.drawable.a_red, R.drawable.i_red, R.drawable.u_red, R.drawable.e_red, R.drawable.o_red, R.drawable.ka_red, R.drawable.ki_red, R.drawable.ku_red, R.drawable.ke_red, R.drawable.ko_red};
     private int[] btns_green = new int[]{R.drawable.a_green, R.drawable.i_green, R.drawable.u_green, R.drawable.e_green, R.drawable.o_green, R.drawable.ka_green, R.drawable.ki_green, R.drawable.ku_green, R.drawable.ke_green, R.drawable.ko_green, R.drawable.ga_green, R.drawable.gi_green, R.drawable.gu_green, R.drawable.ge_green, R.drawable.go_green};
     private int[] mButtons = new int[]{R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9};
     public int y;
-    public int noise = rnd.nextInt(soundFiles.length);
-    final int ans = rnd.nextInt(mButtons.length);
 
     List<Integer> numbers = new ArrayList<>();
+
+
     private AdView mAdView;
 
     @Override
@@ -55,18 +54,17 @@ public class ListeningGame extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
-        example = getSharedPreferences(PREFS, counter);
+        pref1 = getSharedPreferences(PREFS, counter);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setLogo(R.drawable.gengo_logo);
         actionBar.setDisplayUseLogoEnabled(true);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         for (int i = 0; i < soundFiles.length; i++) {
             numbers.add(i);
         }
 
-
-        //setAns();
         setBoard();
     }
 
@@ -80,12 +78,11 @@ public class ListeningGame extends AppCompatActivity {
     }
 
     public void setBoard() {
+
+
         counter++;
         stringCounter = Integer.toString(counter);
 
-      /*  Toast.makeText(ListeningGame.this, stringCounter,
-                Toast.LENGTH_LONG).show();
-              */
         y = getRand();
         Button one = (Button) findViewById(R.id.practice1);
         final MediaPlayer mp1 = MediaPlayer.create(this, soundFiles[y]);
@@ -97,6 +94,7 @@ public class ListeningGame extends AppCompatActivity {
             }
         });
 
+        final int ans = rnd.nextInt(mButtons.length);
 
         final ImageButton button1 = (ImageButton) findViewById(R.id.btn1);
         final ImageButton button2 = (ImageButton) findViewById(R.id.btn2);
@@ -108,24 +106,17 @@ public class ListeningGame extends AppCompatActivity {
         final ImageButton button8 = (ImageButton) findViewById(R.id.btn8);
         final ImageButton button9 = (ImageButton) findViewById(R.id.btn9);
 
+        findViewById(mButtons[ans]).setBackgroundResource(btns_orange[y]);
+
         for (int i = 0; i < mButtons.length; i++) {
-
-            findViewById(mButtons[ans]).setBackgroundResource(btns_orange[y]);
-
-            if (mButtons[i] != mButtons[ans]) {
-                findViewById(mButtons[i]).setBackgroundResource(btns_orange[getRand()]);
-                i++;
-            }
+            if(mButtons[ans] != mButtons[i])
+            findViewById(mButtons[i]).setBackgroundResource(btns_orange[getRand()]);
         }
 
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button1 == findViewById(mButtons[ans])) {
-                    button1.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -146,15 +137,11 @@ public class ListeningGame extends AppCompatActivity {
             }
         });
 
-        button2.setBackgroundResource(btns_orange[getRand()]);
+
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button2 == findViewById(mButtons[ans])) {
-                    button2.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -176,16 +163,11 @@ public class ListeningGame extends AppCompatActivity {
             }
         });
 
-        button3.setBackgroundResource(btns_orange[getRand()]);
+
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button3 == findViewById(mButtons[ans])) {
-                    button3.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -206,16 +188,11 @@ public class ListeningGame extends AppCompatActivity {
 
             }
         });
-        button4.setBackgroundResource(btns_orange[getRand()]);
+
         button4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button4 == findViewById(mButtons[ans])) {
-                    button4.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -236,16 +213,11 @@ public class ListeningGame extends AppCompatActivity {
 
             }
         });
-        button5.setBackgroundResource(btns_orange[getRand()]);
+
         button5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button5 == findViewById(mButtons[ans])) {
-                    button5.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -266,16 +238,11 @@ public class ListeningGame extends AppCompatActivity {
 
             }
         });
-        button6.setBackgroundResource(btns_orange[getRand()]);
+
         button6.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button6 == findViewById(mButtons[ans])) {
-                    button6.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -296,16 +263,11 @@ public class ListeningGame extends AppCompatActivity {
 
             }
         });
-        button7.setBackgroundResource(btns_orange[getRand()]);
+
         button7.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button7 == findViewById(mButtons[ans])) {
-                    button7.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -327,16 +289,11 @@ public class ListeningGame extends AppCompatActivity {
             }
         });
 
-        button8.setBackgroundResource(btns_orange[getRand()]);
+
         button8.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button8 == findViewById(mButtons[ans])) {
-                    button8.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -357,15 +314,11 @@ public class ListeningGame extends AppCompatActivity {
 
             }
         });
-        button9.setBackgroundResource(btns_orange[getRand()]);
+
         button9.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button9 == findViewById(mButtons[ans])) {
-                    button9.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -391,14 +344,16 @@ public class ListeningGame extends AppCompatActivity {
 
     public void resetGame() {
 
-       if (stringCounter == "0" || stringCounter == "1" || stringCounter == "2" || stringCounter == "3" || stringCounter == "4" || stringCounter == "5") {
-           startActivity(new Intent(this, ListeningGame.class));
-           finish();
+        if (stringCounter == "0" || stringCounter == "1" || stringCounter == "2" || stringCounter == "3" || stringCounter == "4" || stringCounter == "5") {
+            startActivity(new Intent(this, ListeningGame.class));
+            finish();
         } else {
             startActivity(new Intent(this, Chapter1_4.class));
             finish();
+
         }
     }
+
     @Override
     public void onBackPressed() {
     }

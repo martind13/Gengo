@@ -48,8 +48,9 @@
 
             <ImageButton
                 android:text="Button"
-                android:layout_width="108dp"
+                android:layout_width="wrap_content"
                 android:layout_height="98dp"
+                android:layout_weight="1.00"
                 android:id="@+id/btn1"
                 android:onClick="btn1_click"
                 style="@style/Widget.AppCompat.Button.Borderless"/>
@@ -88,7 +89,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="98dp"
                 android:id="@+id/btn4"
-                android:layout_weight="0.99"
+                android:layout_weight="1.00"
                 android:onClick="btn4_click"
                 style="@style/Widget.AppCompat.Button.Borderless"/>
 
@@ -127,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="98dp"
                 android:id="@+id/btn7"
-                android:layout_weight="0.99"
+                android:layout_weight="1.00"
                 android:onClick="btn7_click"
                 style="@style/Widget.AppCompat.Button.Borderless"/>
 

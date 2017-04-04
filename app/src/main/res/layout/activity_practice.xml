@@ -15,7 +15,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="378dp">
+        android:layout_height="426dp">
 
         <Button
             android:id="@+id/btn1"
@@ -32,7 +32,7 @@
 
         <Button
             android:id="@+id/btn2"
-            android:text="Romanji Game"
+            android:text="Romaji Game"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:layout_width="match_parent"
@@ -70,16 +70,36 @@
             android:layout_marginRight="10dp"
             android:theme="@style/MyButton3"
             android:layout_height="70dp" />
+        <Button
+            android:id="@+id/btn5"
+            android:text="Go back"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:theme="@style/MyButton2"
+            android:textStyle="normal|bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="70dp"
+            android:onClick="goBack" />
     </LinearLayout>
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id">
-    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
 
 
 </LinearLayout>

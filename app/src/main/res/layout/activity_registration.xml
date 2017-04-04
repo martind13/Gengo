@@ -58,11 +58,17 @@
                 android:inputType="textPassword" />
 
             <Button
+                android:text=" Sign up"
                 android:id="@+id/buttonSignup"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="Signup" />
+                android:textStyle="normal|bold"
+                android:theme="@style/MyButton2"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:layout_height="60dp" />
 
             <TextView
                 android:text="Already Registered?"

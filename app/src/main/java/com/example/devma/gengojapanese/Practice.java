@@ -41,12 +41,23 @@ public class Practice extends AppCompatActivity {
             }
         });
 
+
         Button two = (Button)this.findViewById(R.id.btn2);
 
         two.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(Practice.this, Romanji_Practice.class);
+                Practice.this.startActivity(myIntent);
+            }
+        });
+
+        Button five = (Button)this.findViewById(R.id.btn5);
+
+        five.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Practice.this, WelcomeScreen.class);
                 Practice.this.startActivity(myIntent);
             }
         });

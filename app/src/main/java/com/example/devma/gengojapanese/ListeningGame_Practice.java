@@ -78,12 +78,11 @@ public class ListeningGame_Practice extends AppCompatActivity {
     }
 
     public void setBoard() {
+
+
         counter++;
         stringCounter = Integer.toString(counter);
 
-      /*  Toast.makeText(ListeningGame.this, stringCounter,
-                Toast.LENGTH_LONG).show();
-              */
         y = getRand();
         Button one = (Button) findViewById(R.id.practice1);
         final MediaPlayer mp1 = MediaPlayer.create(this, soundFiles[y]);
@@ -95,6 +94,7 @@ public class ListeningGame_Practice extends AppCompatActivity {
             }
         });
 
+        final int ans = rnd.nextInt(mButtons.length);
 
         final ImageButton button1 = (ImageButton) findViewById(R.id.btn1);
         final ImageButton button2 = (ImageButton) findViewById(R.id.btn2);
@@ -106,24 +106,17 @@ public class ListeningGame_Practice extends AppCompatActivity {
         final ImageButton button8 = (ImageButton) findViewById(R.id.btn8);
         final ImageButton button9 = (ImageButton) findViewById(R.id.btn9);
 
+        findViewById(mButtons[ans]).setBackgroundResource(btns_orange[y]);
+
         for (int i = 0; i < mButtons.length; i++) {
-
-            findViewById(mButtons[ans]).setBackgroundResource(btns_orange[y]);
-
-            if (mButtons[i] != mButtons[ans]) {
+            if(mButtons[ans] != mButtons[i])
                 findViewById(mButtons[i]).setBackgroundResource(btns_orange[getRand()]);
-                i++;
-            }
         }
 
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button1 == findViewById(mButtons[ans])) {
-                    button1.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -144,15 +137,11 @@ public class ListeningGame_Practice extends AppCompatActivity {
             }
         });
 
-        button2.setBackgroundResource(btns_orange[getRand()]);
+
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button2 == findViewById(mButtons[ans])) {
-                    button2.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -174,16 +163,11 @@ public class ListeningGame_Practice extends AppCompatActivity {
             }
         });
 
-        button3.setBackgroundResource(btns_orange[getRand()]);
+
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button3 == findViewById(mButtons[ans])) {
-                    button3.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -204,16 +188,11 @@ public class ListeningGame_Practice extends AppCompatActivity {
 
             }
         });
-        button4.setBackgroundResource(btns_orange[getRand()]);
+
         button4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button4 == findViewById(mButtons[ans])) {
-                    button4.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -234,16 +213,11 @@ public class ListeningGame_Practice extends AppCompatActivity {
 
             }
         });
-        button5.setBackgroundResource(btns_orange[getRand()]);
+
         button5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button5 == findViewById(mButtons[ans])) {
-                    button5.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -264,16 +238,11 @@ public class ListeningGame_Practice extends AppCompatActivity {
 
             }
         });
-        button6.setBackgroundResource(btns_orange[getRand()]);
+
         button6.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button6 == findViewById(mButtons[ans])) {
-                    button6.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -294,16 +263,11 @@ public class ListeningGame_Practice extends AppCompatActivity {
 
             }
         });
-        button7.setBackgroundResource(btns_orange[getRand()]);
+
         button7.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button7 == findViewById(mButtons[ans])) {
-                    button7.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -325,16 +289,11 @@ public class ListeningGame_Practice extends AppCompatActivity {
             }
         });
 
-        button8.setBackgroundResource(btns_orange[getRand()]);
+
         button8.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button8 == findViewById(mButtons[ans])) {
-                    button8.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
-
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -355,15 +314,11 @@ public class ListeningGame_Practice extends AppCompatActivity {
 
             }
         });
-        button9.setBackgroundResource(btns_orange[getRand()]);
+
         button9.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                if (button9 == findViewById(mButtons[ans])) {
-                    button9.setBackgroundResource(btns_green[y]);
-                } else {
-                    findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
-                }
+                findViewById(mButtons[ans]).setBackgroundResource(btns_green[y]);
 
                 button1.setEnabled(false);
                 button2.setEnabled(false);
@@ -386,6 +341,7 @@ public class ListeningGame_Practice extends AppCompatActivity {
         });
 
     }
+
 
     public void resetGame() {
         startActivity(new Intent(this, ListeningGame_Review1.class));

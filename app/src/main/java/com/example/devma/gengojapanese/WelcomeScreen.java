@@ -35,55 +35,30 @@ public class WelcomeScreen extends AppCompatActivity {
     }
 
     public void practiceClick(View view) {
-        Button login = (Button)findViewById(R.id.practice);
-        final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);
-        MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 20);
-        myAnim.setInterpolator(interpolator);
-        login.startAnimation(myAnim);
         Intent myIntent = new Intent(WelcomeScreen.this, Practice.class);
         WelcomeScreen.this.startActivity(myIntent);
         finish();
     }
 
     public void chaptersClick(View view) {
-        Button login = (Button)findViewById(R.id.chapters);
-        final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);
-        MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 20);
-        myAnim.setInterpolator(interpolator);
-        login.startAnimation(myAnim);
-        Intent myIntent = new Intent(WelcomeScreen.this, Chapter1_1.class);
+        Intent myIntent = new Intent(WelcomeScreen.this, Chapters.class);
         WelcomeScreen.this.startActivity(myIntent);
         finish();
     }
 
     public void vocabClick(View view){
-        Button login = (Button)findViewById(R.id.practice);
-        final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);
-        MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 20);
-        myAnim.setInterpolator(interpolator);
-        login.startAnimation(myAnim);
         Intent myIntent = new Intent(WelcomeScreen.this, VocabMenu.class);
         WelcomeScreen.this.startActivity(myIntent);
         finish();
     }
     public void kanjiClick(View view){
-        Button login = (Button)findViewById(R.id.practice);
-        final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);
-        MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 20);
-        myAnim.setInterpolator(interpolator);
-        login.startAnimation(myAnim);
         Intent myIntent = new Intent(WelcomeScreen.this, Kanji.class);
         WelcomeScreen.this.startActivity(myIntent);
         finish();
     }
     public void logoutClick(View v){
-        Button login = (Button)findViewById(R.id.practice);
-        final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);
-        MyBounceInterpolator interpolator = new MyBounceInterpolator(0.2, 20);
-        myAnim.setInterpolator(interpolator);
-        login.startAnimation(myAnim);
         FirebaseAuth.getInstance().signOut();
-        startActivity(new Intent(this, LoginActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
         finish();
     }
     @Override

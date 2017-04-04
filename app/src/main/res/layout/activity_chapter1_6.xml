@@ -20,15 +20,19 @@
         android:background="@drawable/bunny_tip">
 
         <TextView
-            android:text="TextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:text="There are 46 basic hiragana letters; however, these letters are modified to make even more sounds"
             android:id="@+id/textView5"
+            android:layout_width="170dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/lock_button"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:layout_height="82dp"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="74dp"
-            android:layout_marginEnd="74dp" />
+            android:paddingTop="5dp" />
     </RelativeLayout>
 
     <ScrollView
@@ -60,14 +64,24 @@
                         android:textSize="50sp"
                         android:background="@drawable/ta_orange"
                         style="@style/Widget.AppCompat.Button.Borderless"/>
-
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textview1"
                         android:layout_weight="1"
-                        android:padding="10dp"/>
+                        android:padding="10dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/lock_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"/>
+                </RelativeLayout>
 
                 </LinearLayout>
 
@@ -84,14 +98,24 @@
                         android:textSize="50sp"
                         android:background="@drawable/chi_orange"
                         style="@style/Widget.AppCompat.Button.Borderless"/>
-
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textview2"
                         android:layout_weight="1"
-                        android:padding="10dp"/>
+                        android:padding="10dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/lock_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"/>
+                </RelativeLayout>
 
                 </LinearLayout>
 
@@ -108,14 +132,24 @@
                         android:textSize="50sp"
                         android:background="@drawable/tsu_orange"
                         style="@style/Widget.AppCompat.Button.Borderless"/>
-
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textview3"
                         android:layout_weight="1"
-                        android:padding="10dp"/>
+                        android:padding="10dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/lock_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"/>
+                </RelativeLayout>
 
                 </LinearLayout>
 
@@ -132,14 +166,24 @@
                         android:textSize="50sp"
                         android:background="@drawable/te_orange"
                         style="@style/Widget.AppCompat.Button.Borderless"/>
-
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textview4"
                         android:layout_weight="1"
-                        android:padding="10dp"/>
+                        android:padding="10dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/lock_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"/>
+                </RelativeLayout>
 
                 </LinearLayout>
 
@@ -156,15 +200,24 @@
                         android:textSize="50sp"
                         android:background="@drawable/to_orange"
                         style="@style/Widget.AppCompat.Button.Borderless"/>
-
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textview5"
                         android:layout_weight="1"
-                        android:padding="10dp"/>
-
+                        android:padding="10dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/lock_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"/>
+                </RelativeLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -180,14 +233,24 @@
                         android:textSize="50sp"
                         android:background="@drawable/da_orange"
                         style="@style/Widget.AppCompat.Button.Borderless"/>
-
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textview6"
                         android:layout_weight="1"
-                        android:padding="10dp"/>
+                        android:padding="10dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/lock_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"/>
+                </RelativeLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -202,14 +265,24 @@
                         android:textSize="50sp"
                         android:background="@drawable/di_orange"
                         style="@style/Widget.AppCompat.Button.Borderless"/>
-
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textview7"
                         android:layout_weight="1"
-                        android:padding="10dp"/>
+                        android:padding="10dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/lock_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"/>
+                </RelativeLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -224,14 +297,24 @@
                         android:layout_height="90dp"
                         android:textSize="50sp"
                         style="@style/Widget.AppCompat.Button.Borderless"/>
-
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textview8"
                         android:layout_weight="1"
-                        android:padding="10dp"/>
+                        android:padding="10dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/lock_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"/>
+                </RelativeLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -246,7 +329,9 @@
                         android:layout_height="90dp"
                         android:textSize="50sp"
                         style="@style/Widget.AppCompat.Button.Borderless"/>
-
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
@@ -254,8 +339,14 @@
                         android:id="@+id/textview9"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        />
-                    />
+                        android:textStyle="normal|bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/lock_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"/>
+                </RelativeLayout>
                 </LinearLayout>
 
                 <LinearLayout
@@ -270,17 +361,26 @@
                         android:layout_height="90dp"
                         android:textSize="50sp"
                         style="@style/Widget.AppCompat.Button.Borderless"/>
-
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <TextView
                         android:text="TextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textview10"
                         android:layout_weight="1"
-                        android:padding="10dp"/>
+                        android:padding="10dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="17sp"
+                        android:textColor="@color/lock_button"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="13dp"/>
+                </RelativeLayout>
 
                 </LinearLayout>
-            </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -304,6 +404,6 @@
             </RelativeLayout>
 
         </LinearLayout>
-
+</LinearLayout>
     </ScrollView>
 </LinearLayout>

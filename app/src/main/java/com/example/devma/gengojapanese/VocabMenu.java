@@ -19,6 +19,8 @@ import android.widget.ExpandableListView.OnGroupClickListener;
 import android.widget.ExpandableListView.OnGroupExpandListener;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class VocabMenu extends AppCompatActivity {
@@ -26,12 +28,19 @@ public class VocabMenu extends AppCompatActivity {
         private static ExpandableListView expandableListView;
         private static ExpandableListAdapter adapter;
 
+    private AdView mAdView;
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_vocab_menu);
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
             expandableListView = (ExpandableListView) findViewById(R.id.simple_expandable_listview);
+
+            mAdView = (AdView) findViewById(R.id.adView);
+            AdRequest adRequest = new AdRequest.Builder().build();
+            mAdView.loadAd(adRequest);
+
 
             // Setting group indicator null for custom indicator
             expandableListView.setGroupIndicator(null);

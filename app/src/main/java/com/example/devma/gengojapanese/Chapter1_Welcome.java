@@ -27,12 +27,16 @@ public class Chapter1_Welcome extends AppCompatActivity {
                     Intent myIntent = new Intent(Chapter1_Welcome.this, Chapter1_Welcome1.class);
                     Chapter1_Welcome.this.startActivity(myIntent);
                     //overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-
-                    finish();
                     overridePendingTransition(0, 0);
+                    finish();
+
                 }
             }, 3000);
         }
-
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(Chapter1_Welcome.this, Chapters.class));
+        finish();
+    }
 
     }

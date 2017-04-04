@@ -1,5 +1,6 @@
 package com.example.devma.gengojapanese;
 
+import android.app.ActivityManager;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Handler;
@@ -19,18 +20,26 @@ public class Chapter1_Welcome4 extends AppCompatActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    Intent myIntent = new Intent(Chapter1_Welcome4.this, Chapter1_Welcome2.class);
-                    Chapter1_Welcome4.this.startActivity(myIntent);
-                    //overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        ImageView img = (ImageView)findViewById(R.id.image1);
 
-                    finish();
-                    overridePendingTransition(0, 0);
-                }
-            }, 3000);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent myIntent = new Intent(Chapter1_Welcome4.this, Chapter1_Welcome2.class);
+                Chapter1_Welcome4.this.startActivity(myIntent);
+                //overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                overridePendingTransition(0, 0);
+
+                finish();
+            }
+        }, 3000);
+        
+
         }
+    public void onBackPressed() {
+        startActivity(new Intent(Chapter1_Welcome4.this, Chapters.class));
+        finish();
+    }
 
     }
 

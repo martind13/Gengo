@@ -10,12 +10,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.devma.gengojapanese.About">
+    tools:context="com.example.devma.gengojapanese.About"
+    android:weightSum="1">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="78dp"
+        android:layout_height="59dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
@@ -38,10 +39,10 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="237dp">
+        android:layout_height="92dp">
 
         <TextView
-            android:text="It's lit, fam."
+            android:text="Gengo aims to help users learn Japanese with fun, interactive content!"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView6"
@@ -49,9 +50,17 @@
             android:textAlignment="center"
             android:textStyle="normal|bold" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_weight="1.07">
+
         <TextView
-            android:text="(I don't know how to say that in Japanese)"
-            android:layout_width="match_parent"
+            android:text="Learn how to read and write Japanese hiragana, katakana, and kanji. The further you progress, the more lessons you can unlock on grammar, expressions, culture, and more!"
+        android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView7"
             android:textAlignment="center"
@@ -61,7 +70,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="141dp">
+        android:layout_height="79dp"
+        android:layout_weight="0.10">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -69,18 +79,22 @@
 
             <Button
                 android:text="go back"
-                android:layout_height="wrap_content"
                 android:id="@+id/button"
+                android:onClick="goHome1"
+                android:textStyle="normal|bold"
+                android:theme="@style/MyButton2"
+                android:layout_height="70dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_width="200dp"
                 android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_width="145dp"
-                android:onClick="goHome1" />
+                android:layout_centerHorizontal="true" />
         </RelativeLayout>
     </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="87dp">
+        android:layout_height="62dp">
 
         <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
@@ -95,7 +109,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="28dp">
 
         <TextView
             android:text="Copyright \u00A9 Devin Martin 2017"
